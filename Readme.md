@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Oleg Khasevich](https://up.htmlacademy.ru/htmlcss/36/user/2288783).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
