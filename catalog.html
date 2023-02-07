@@ -31,13 +31,13 @@
                 </span>
                </a>
            <li class="navigation-item">
-             <a class="button button-all" href="#">Хочу сюда!</a>
+             <a class="button-small" href="#">Хочу сюда!</a>
          </ul>
        </nav>
      </header>
      <main class="main-inner">
       <section class="catalog-navigation">
-       <h1>Гостиницы Седоны</h1>
+       <h1 class="main-title">Гостиницы Седоны</h1>
        <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html"><img src="#" alt="дом"></a>
@@ -49,7 +49,7 @@
           </a>
         </li>
       </ul>
-      <h4>Инфраструктура:</h4>
+      <h4 class="breadcrumbs-title">Инфраструктура:</h4>
       <ul class="infrastructure">
         <li class="infrastructure-item">
           <label>
@@ -70,7 +70,7 @@
             </label>
         </li>
       </ul>
-      <h4>Тип жилья:</h4>
+      <h4 class="breadcrumbs-title">Тип жилья:</h4>
       <ul class="housetype">
         <li class="housetype-item">
           <label>
@@ -92,7 +92,7 @@
         </li>
       </ul>
       <div class="price">
-        <div class="price-title">Стоимость, ₽:</div>
+        <div class="breadcrumbs-title">Стоимость, ₽:</div>
         <span>от</span>
         <input class="control-input-min" type="number" name="min-price" value="0">
         <span>до</span>
@@ -101,13 +101,14 @@
       </div>
       <form class="price-buttons">
         <div>
-        <button type="submit">Применить</button>
-        <button type="submit">Сбросить</button>
+        <button class="button-small" type="submit">Применить</button>
+        <button class="button-small" type="submit">Сбросить</button>
         </div>
       </form>
     </section>
+    <div class="hotels">
     <section class="sorting">
-      <h2>Найдено гостиниц: 38</h2>
+      <h2 class="sorting-title">Найдено гостиниц: 38</h2>
       <select name="vatiation-sorting" id="">
         <option value="">Сначала дешевые</option>
       </select>
@@ -131,9 +132,9 @@
           <h3 class="hotel-cart-title">Amara Resort & Spa</h3>
           </a>
           <p class="hotel-cart-text">Гостинница</p>
-          <p class="hotel-cart-text">От 4000 ₽</p>
-          <a class="hotel-cart-bottom" href="#">подробнее</a>
-          <a class="hotel-cart-bottom" href="#">в избранное</a>
+          <p class="hotel-cart-price">От 4000 ₽</p>
+          <a class="button-small" href="#">подробнее</a>
+          <a class="button-small" href="#">в избранное</a>
           <div>
             <span> 4 звезды</span>
           </div>
@@ -145,9 +146,9 @@
             <h3 class="hotel-cart-title">Villas at Poco Diablo</h3>
             </a>
             <p class="hotel-cart-text">Гостинница</p>
-            <p class="hotel-cart-text">От 5000 ₽</p>
-            <a class="hotel-cart-bottom" href="#">подробнее</a>
-            <a class="hotel-cart-bottom" href="#">в избранное</a>
+            <p class="hotel-cart-price">От 5000 ₽</p>
+            <a class="button-small" href="#">подробнее</a>
+            <a class="button-small" href="#">в избранное</a>
             <div>
               <span> 4 звезды</span>
             </div>
@@ -159,9 +160,9 @@
               <h3 class="hotel-cart-title">Desert Quail Inn</h3>
               </a>
               <p class="hotel-cart-text">Гостинница</p>
-              <p class="hotel-cart-text">От 2500 ₽</p>
-              <a class="hotel-cart-bottom" href="#">подробнее</a>
-              <a class="hotel-cart-bottom" href="#">в избранное</a>
+              <p class="hotel-cart-price">От 2500 ₽</p>
+              <a class="button-small" href="#">подробнее</a>
+              <a class="button-small" href="#">в избранное</a>
               <div>
                 <span> 3 звезды</span>
               </div>
@@ -173,9 +174,9 @@
                 <h3 class="hotel-cart-title">GreenTree Inn</h3>
                 </a>
                 <p class="hotel-cart-text">Гостинница</p>
-                <p class="hotel-cart-text">От 1500 ₽</p>
-                <a class="hotel-cart-bottom" href="#">подробнее</a>
-                <a class="hotel-cart-bottom" href="#">в избранное</a>
+                <p class="hotel-cart-price">От 1500 ₽</p>
+                <a class="button-small" href="#">подробнее</a>
+                <a class="button-small" href="#">в избранное</a>
                 <div>
                   <span> 2 звезды</span>
                 </div>
@@ -206,17 +207,19 @@
         </ul>
       </section>
       <section class="mail-catalog">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="mail-title-catalog">Подпишитесь на рассылку</h2>
+        <p class="mail-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
          <label class="form-label" for="mail-post">e-mail</label>
          <div>
           <input type="text" id="mail-post" name="mail-post" placeholder="Ваш e-mail">
-          <button class="button" type="submit">Подписаться</button>
+          <button class="button-big" type="submit">Подписаться</button>
          </div>
         </form>
       </section>
+      </div>
 </main>
+
 <footer class="page-footer">
   <section class="footer-social">
     <ul class="footer-social-list">

@@ -82,5 +82,74 @@ body {
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
-
+}
+.main-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+.breadcrumbs-link{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.breadcrumbs-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.infrastructure-item {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+.housetype-item {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+.button-small {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.button-big {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sorting-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hotel-cart-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+ }
+ .hotel-cart-text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+ }
+ .hotel-cart-price {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.hotels {
+  background-color: #FFFFFF;
+}
+.pagination {
+  background-color: #FFFFFF;
+}
+.pagination-link-buttom {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: #82B3D3;
 }
