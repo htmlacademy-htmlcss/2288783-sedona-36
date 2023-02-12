@@ -8,8 +8,8 @@
 </head>
   <body>
     <header class="page-header">
-      <nav><a class="navigation-logo" href="index.html"><img src="images/header-img/header-logo.svg" width="140" height="70" alt="Логотип"></a></nav>
-      <nav class="navigation">
+     <a class="navigation-logo" href="index.html"><img src="images/header-img/header-logo.svg" width="140" height="70" alt="Логотип"></a>
+     <nav class="navigation">
          <ul class="navigation-list">
            <li class="navigation-item">
              <a class="navigation-link" href="index.html">Главная</a>
@@ -50,7 +50,7 @@
           </a>
         </li>
       </ul>
-      <h4 class="breadcrumbs-title">Инфраструктура:</h4>
+      <h4 class="infrastructure-title">Инфраструктура:</h4>
       <ul class="infrastructure">
         <li class="infrastructure-item">
           <label>
@@ -71,7 +71,7 @@
             </label>
         </li>
       </ul>
-      <h4 class="breadcrumbs-title">Тип жилья:</h4>
+      <h4 class="housetype-title">Тип жилья:</h4>
       <ul class="housetype">
         <li class="housetype-item">
           <label>
@@ -93,38 +93,36 @@
         </li>
       </ul>
       <div class="price">
-        <div class="breadcrumbs-title">Стоимость, ₽:</div>
+        <div class="price-title">Стоимость, ₽:</div>
         <span>от</span>
         <input class="control-input-min" type="number" name="min-price" value="0">
         <span>до</span>
         <input class="control-input-max" type="number" name="max-price" value="9000">
         <input class="control-input" type="range" name="price-range">
       </div>
-      <form class="price-buttons">
-        <div>
+      <div class="price-buttons">
         <button class="button-small" type="submit">Применить</button>
-        <button class="button-small" type="submit">Сбросить</button>
-        </div>
-      </form>
+        <button class="button-small" type="reset">Сбросить</button>
+      </div>
     </section>
     <div class="hotels">
-    <section class="sorting">
+     <section class="sorting">
       <h2 class="sorting-title">Найдено гостиниц: 38</h2>
       <select name="vatiation-sorting" id="">
         <option value="">Сначала дешевые</option>
       </select>
       <ul class="view">
-        <li>
+        <li class="view-item">
           <a class="icon"><img src="" alt="Список"></a>
         </li>
-        <li>
+        <li class="view-item">
           <a class="icon"><img src="" alt="Крупные значки"></a>
         </li>
-        <li>
+        <li class="view-item">
           <a class="icon"><img src="" alt="Таблица"></a>
         </li>
       </ul>
-    </section>
+     </section>
     <section class="hotels">
       <ul class="hotel-list">
         <li class="hotel-list-item">
@@ -136,53 +134,53 @@
           <p class="hotel-cart-price">От 4000 ₽</p>
           <a class="button-small" href="#">подробнее</a>
           <a class="button-small" href="#">в избранное</a>
-          <div>
+          <div class="rating">
             <span> 4 звезды</span>
           </div>
           <p>Рейтинг: 8,5</p>
         </li>
         <li class="hotel-list-item">
             <a class="hotel-cart-link" href="#">
-            <img src="images/Catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
+            <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
             <h3 class="hotel-cart-title">Villas at Poco Diablo</h3>
             </a>
             <p class="hotel-cart-text">Гостинница</p>
             <p class="hotel-cart-price">От 5000 ₽</p>
             <a class="button-small" href="#">подробнее</a>
             <a class="button-small" href="#">в избранное</a>
-            <div>
+            <div class="rating">
               <span> 4 звезды</span>
             </div>
             <p>Рейтинг: 9,2</p>
           </li>
           <li class="hotel-list-item">
               <a class="hotel-cart-link" href="#">
-              <img src="images/Catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
+              <img src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
               <h3 class="hotel-cart-title">Desert Quail Inn</h3>
               </a>
               <p class="hotel-cart-text">Гостинница</p>
               <p class="hotel-cart-price">От 2500 ₽</p>
               <a class="button-small" href="#">подробнее</a>
               <a class="button-small" href="#">в избранное</a>
-              <div>
+              <div class="rating">
                 <span> 3 звезды</span>
               </div>
               <p>Рейтинг: 6,9</p>
             </li>
             <li class="hotel-list-item">
                 <a class="hotel-cart-link" href="#">
-                <img src="images/Catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
-                <h3 class="hotel-cart-title">GreenTree Inn</h3>
+                 <img src="images/catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
+                 <h3 class="hotel-cart-title">GreenTree Inn</h3>
                 </a>
                 <p class="hotel-cart-text">Гостинница</p>
                 <p class="hotel-cart-price">От 1500 ₽</p>
                 <a class="button-small" href="#">подробнее</a>
                 <a class="button-small" href="#">в избранное</a>
-                <div>
+                <div class="rating">
                   <span> 2 звезды</span>
                 </div>
                 <p>Рейтинг: 5,0</p>
-              </li>
+            </li>
         </ul>
       </section>
       <section class="pagination">
@@ -212,15 +210,14 @@
         <p class="mail-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
          <label class="form-label" for="mail-post">e-mail</label>
-         <div>
+         <div class="mail-adress">
           <input type="text" id="mail-post" name="mail-post" placeholder="Ваш e-mail">
           <button class="button-big" type="submit">Подписаться</button>
          </div>
         </form>
       </section>
-      </div>
+    </div>
 </main>
-
 <footer class="page-footer">
   <section class="footer-social">
     <ul class="footer-social-list">
