@@ -12,25 +12,52 @@
   src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+html{
+  height: 100%;
+}
+.page-container {
+  width:1200px;
+  margin:0 auto;
+  justify-content: space-between;
+}
 body {
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family:"PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #FFFFFF;
+  background-color:#F2F2F2;
   color: #000000;
 }
 .page-header {
   color:#000000;
   background-color: #FFFFFF;
   line-height: 24px;
-
 }
-.hero {
- background-image:url("../images/hero-img/hero-background.jpg");
- background-color: #FFFFFF;
- color: #000000;
- background-size: 100% auto;
- background-repeat: no-repeat;
+.main-container {
+  flex-grow: 1;
+}
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
+}
+.navigation-list {
+
+  padding: 0;
+  margin: 0;
+  width: 339px;
+}
+.navigation-user {
+  padding: 0;
+  margin: 0;
+  width: 268px;
+  margin-left: auto;
+}
+.navigation-logo {
+ margin-right: 28px;
 }
 .navigation-link {
   font-size: 20px;
@@ -39,12 +66,68 @@ body {
   line-height: 24px ;
   color: #000000;
 }
+.logo {
+ display: block;
+ margin: 0 auto;
+}
+.hero {
+ margin: 0;
+ padding: 0;
+ background-image:url("../images/hero-img/hero-background.jpg");
+ background-color: #FFFFFF;
+ color: #000000;
+ background-size: 100% auto;
+ background-repeat: no-repeat;
+}
+.information-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.advantages-title{
+  margin:0 auto;
+  width:620px;
+  margin-bottom: 25px;
+}
+.advantages-text{
+  margin:0 auto;
+  text-align: center;
+  margin-top: 25px;
+}
 .main-index{
   background-color: #FFFFFF;
   color: #000000;
 }
 .advantages-list {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.item-picture{
+  display: flex;
+  flex-direction: row;
+}
+.item-picture-bridge{
+  display: flex;
+  flex-direction: row-reverce;
+}
+.advantages-item-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #82B3D3;
+}
+.triple-advantage {
+  display: flex;
+  height: 385px;
+}
+.triple{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: center;
 }
 .advantages-title {
   font-size: 30px;
@@ -62,25 +145,78 @@ body {
   font-weight: 400;
   line-height: 26px;
 }
+.services-list{
+  display: flex;
+}
+.service-item{
+  display: flex;
+  text-align: center;
+  width: 400px; ;
+  height: 385px;
+  background-color: #83B3D31F;
+}
+.service-block{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+}
+.service-icon{
+  margin: 0 auto;
+}
+.hotel-search{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.mail{
+  background-image:url("../images/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1200px;
+  height: 414.86px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
 .mail-title {
+  text-align: center;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .mail-text {
+  text-align: center;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
 }
+.mail-form{
+
+}
 .page-footer {
   background-color: #FFFFFF;
   color: #000000;
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  }
+
+.html-logo{
+  width: 114.9px;
+  margin-right: 70.1px;
 }
 .contacts-phone {
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
+  width: 331px;
+  text-decoration: none;
+  color: #000000;
 }
 .main-title {
   font-size: 60px;
