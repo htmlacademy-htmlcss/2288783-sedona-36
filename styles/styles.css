@@ -32,63 +32,90 @@ body {
   background-color:#F2F2F2;
   color: #000000;
 }
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+}
 .page-header {
   color:#000000;
   line-height: 24px;
-  margin: 0 auto;
-  display: flex;
+  height: 64px;
+  margin-bottom: 0;
 }
 .main-container {
   flex-grow: 1;
 }
+li {
+  list-style-type: none;
+}
 .navigation {
+
   display: flex;
-  margin: 0 auto;
   width: 1060px;
 }
 .navigation-list {
-
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   width: 339px;
 }
 .navigation-user {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   width: 268px;
-  margin-left: auto;
+  margin-left:auto;
 }
 .navigation-logo {
- margin-right: 28px;
+
+  padding: 0 70px 0 70px;
 }
 .navigation-link {
+  display: block;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
   line-height: 24px ;
   color: #000000;
+  padding:20px, 16px, 20px, 16px;
+  margin-top: 20px;
 }
-.logo {
- display: block;
- margin: 0 auto;
-}
+
 .hero {
- margin: 0 auto;
+ display: flex;
+ flex-direction: column;
  background-image:url("../images/hero-img/hero-background.jpg");
  background-color: #FFFFFF;
  color: #000000;
- background-size: 100% cover;
+ background-size: cover;
  background-repeat: no-repeat;
 }
+.logo{
+  margin-top: 51px;
+  padding-left: 371px;
+}
 .information-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-top:69px;
+  padding-bottom:69px;
 }
 .advantages-title{
   margin:0 auto;
+  text-align: center;
   width:620px;
   margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 36px;
 }
 .advantages-text{
   margin:0 auto;
@@ -101,34 +128,31 @@ body {
 }
 .advantages-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.with-image{
+  display: flex;
   margin: 0;
   padding: 0;
+  color: #FFFFFF;
 }
-.item-picture{
+.advantages-element{
   display: flex;
-  flex-direction: row;
-}
-.item-picture-bridge{
-  display: flex;
-  flex-direction: row-reverce;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 385px;
+  padding:103px, 85px, 103px, 85px;
 }
 .advantages-item-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #82B3D3;
-}
-.triple-advantage {
-  display: flex;
-  height: 385px;
-}
-.triple{
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  justify-content: center;
 }
 .advantages-title {
   font-size: 30px;
@@ -140,6 +164,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  text-transform: uppercase;
 }
 .advantages-text {
   font-size: 22px;
@@ -148,19 +173,28 @@ body {
 }
 .services-list{
   display: flex;
+  margin: 0;
+  padding: 0;
+}
+.first-color{
+  background-color:rgba(131, 179, 211, 0.12);
+}
+.second-color{
+  background-color: rgba(131, 179, 211, 0.2);
 }
 .service-item{
   display: flex;
+  justify-content: center;
   text-align: center;
-  width: 400px; ;
-  height: 385px;
-  background-color: #83B3D31F;
+  width: 400px;
 }
 .service-block{
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  justify-content: center;
+  display: block;
+  margin-top: 81px;
+  width: 230px;
+  padding-top:64px;
+  padding-bottom: 64px;
+
 }
 .service-icon{
   margin: 0 auto;
@@ -176,12 +210,11 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 1200px;
-  height: 414.86px;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+
 }
 .mail-title {
   text-align: center;
@@ -205,8 +238,7 @@ body {
   }
 
 .html-logo{
-  width: 114.9px;
-  margin-right: 70.1px;
+  width: 114px;
 }
 .contacts-phone {
   font-size: 40px;
@@ -277,22 +309,13 @@ body {
 .hotels {
   background-color: #FFFFFF;
 }
-.pagination {
-  background-color: #FFFFFF;
-}
-.pagination-link-buttom {
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  background-color: #82B3D3;
-}
+
+
 /* Каталог */
 .catalog-navigation{
   background-image:url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-
-
 }
 .breadcrumbs{
   display: flex;
@@ -301,11 +324,11 @@ body {
 }
 .filtres{
   display: flex;
-  width: 370.85px;
+  width: 370px;
 
 }
 .ifrastrusture{
-  width: 150.43px;
+  width: 150px;
 }
 .price{
   display: flex;
