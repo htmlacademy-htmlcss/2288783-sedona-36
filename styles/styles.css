@@ -78,7 +78,6 @@ li {
   margin-left:auto;
 }
 .navigation-logo {
-
   padding: 0 70px 0 70px;
 }
 .navigation-link {
@@ -199,21 +198,27 @@ li {
   margin: 0 auto;
 }
 .hotel-search{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+display: flex;
+justify-content: center;
+text-align: center;
+height:406px;
+padding-top:95px;
+}
+.search-text-block{
+  display: block;
+  width:592px;
+  height:214px;
 }
 .mail{
   background-image:url("../images/subscribe.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size:cover;
   width: 1200px;
+  height: 415px;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .mail-title {
   text-align: center;
@@ -228,13 +233,23 @@ li {
   font-weight: 400;
   line-height: 26px;
 }
+.mail-form{
+  display: flex;
+  justify-content: center;
+}
 .page-footer {
   background-color: #FFFFFF;
   color: #000000;
-  display: flex;
   width: 1200px;
+  height: 120px;
+}
+.footer-social{
+  display: flex;
+  width:1060px;
   justify-content: space-between;
-  }
+  margin-top: 40px;
+  margin-left: 70px;
+}
 
 .html-logo{
   width: 114px;
@@ -310,7 +325,12 @@ li {
 }
 
 
-/* Каталог */
+
+
+
+     /*                          Каталог                                        */
+
+
 .catalog-navigation{
   background-image:url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
