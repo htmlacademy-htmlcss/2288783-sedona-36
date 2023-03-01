@@ -15,87 +15,106 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link navigation-link-current" href="main.html">Главная</a>
+            </li>
             <li class="navigation-item">
               <a class="navigation-link" href="faq.html">О Седоне</a>
+            </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
           </ul>
           <ul class="navigation-user">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">Поиск</span></a>
+                <span class="visually-hidden">
+                  Поиск
+                </span>
+              </a>
+            </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">Избранное</span></a>
+                <span class="visually-hidden">
+                  Избранное
+                </span>
+              </a>
+            </li>
             <li class="navigation-item">
               <a class="button-small" href="#">Хочу сюда!</a>
+            </li>
           </ul>
         </nav>
       </header>
       <main class="main-container main-inner">
         <section class="catalog-navigation">
-          <h1 class="main-title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html"><img src="#" alt="дом"></a>
-            </li>
-            <img src="" alt="стрелка">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">
-                <span>Главная</span>
-              </a>
-            </li>
-          </ul>
+          <div class="catalog-navigation-header">
+            <h1 class="main-title">Гостиницы Седоны</h1>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="index.html"><img src="#" alt="дом"></a>
+              </li>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link">
+                  <span>Главная</span>
+                </a>
+              </li>
+            </ul>
+          </div>
           <div class="filtres">
-            <ul class="infrastructure">
-              <h4 class="infrastructure-title">Инфраструктура:</h4>
-              <li class="infrastructure-item">
-                <label>
-                  <input type="checkbox"><span>Бассейн</span></label>
-              </li>
-              <li class="infrastructure-item">
-                <label>
-                  <input type="checkbox"><span>Парковка</span></label>
-              </li>
-              <li class="infrastructure-item">
-                <label>
-                  <input type="checkbox"><span>Wi-fi</span></label>
-              </li>
-            </ul>
-            <ul class="housetype">
-              <h4 class="housetype-title">Тип жилья:</h4>
-              <li class="housetype-item">
-                <label>
-                  <input type="radio" value="a" name="house" checked>
-                  <span>Гостиница</span>
-                </label>
-              </li>
-              <li class="housetype-item">
-                <label>
-                  <input type="radio" value="b" name="house">
-                  <span>Мотель</span>
-                </label>
-              </li>
-              <li class="housetype-item">
-                <label>
-                  <input type="radio" value="c" name="house">
-                  <span>Апартаменты</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-          <div class="price">
-            <div class="price-title">Стоимость, ₽:</div>
-            <span>от</span>
-            <input class="control-input-min" type="number" name="min-price" value="0">
-            <span>до</span>
-            <input class="control-input-max" type="number" name="max-price" value="9000">
-            <input class="control-input" type="range" name="price-range">
-          </div>
-          <div class="price-buttons">
-            <button class="button-small" type="submit">Применить</button>
-            <button class="button-small" type="reset">Сбросить</button>
+            <div class="left-filter">
+              <ul class="infrastructure">
+                <h4 class="infrastructure-title">Инфраструктура:</h4>
+                <li class="infrastructure-item">
+                  <input type="checkbox" id="checkbox_1">
+                  <label class="infrastructure-label" for="checkbox_1">Бассейн</label>
+                </li>
+                <li class="infrastructure-item">
+                  <input type="checkbox" id="checkbox_2">
+                  <label class="infrastructure-label" for="checkbox_2">Парковка</label>
+                </li>
+                <li class="infrastructure-item">
+                  <input type="checkbox" id="checkbox_3">
+                  <label class="infrastructure-label" for="checkbox_3">Wi-Fi</label>
+                </li>
+              </ul>
+              <ul class="housetype">
+                <h4 class="housetype-title">Тип жилья:</h4>
+                <li class="housetype-item">
+                  <label class="housetype-label">
+                    <input type="radio" value="hotel" name="house" checked>
+                    <span>Гостиница</span>
+                  </label>
+                </li>
+                <li class="housetype-item">
+                  <label class="housetype-label">
+                    <input type="radio" value="motel" name="house">
+                    <span>Мотель</span>
+                  </label>
+                </li>
+                <li class="housetype-item">
+                  <label class="housetype-label">
+                    <input type="radio" value="appartment" name="house">
+                    <span>Апартаменты</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="price">
+              <span>Стоимость, ₽:</span>
+              <div class="minimal-price">
+                <input class="control-input-min" type="number" name="min-price" value="0" id="min-price">
+                <label class="price-imput" for="min-price">от</label>
+              </div>
+              <div class="maximum-price">
+                <input class="control-input-max" type="number" name="max-price" value="9000" id="max-price">
+                <label class="price-imput" for="max-price">до</label>
+              </div>
+              /* Slider */
+            </div>
+            <div class="price-buttons">
+              <button class="button-small" type="submit">Применить</button>
+              <button class="button-small" type="reset">Сбросить</button>
+            </div>
           </div>
         </section>
         <div class="hotelss">
@@ -191,7 +210,7 @@
                 <a class="pagination-link-buttom" href="#">4</a>
               </li>
               <li class="pagination-list-item">
-                <a class="pagination-link-buttom" href="#">...</a>
+                <span>...</span>
               </li>
               <li class="pagination-list-item">
                 <a class="pagination-link-buttom" href="#">10</a>
@@ -202,11 +221,9 @@
             <h2 class="mail-title-catalog">Подпишитесь на рассылку</h2>
             <p class="mail-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="form-label" for="mail-post">e-mail</label>
-              <div class="mail-adress">
+              <label class="form-label" for="mail-post"></label>
                 <input type="text" id="mail-post" name="mail-post" placeholder="Ваш e-mail">
                 <button class="button-big" type="submit">Подписаться</button>
-              </div>
             </form>
           </section>
         </div>
@@ -230,10 +247,10 @@
               </a>
             </li>
           </ul>
+          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="html-logo" href="https://htmlacademy.ru/"><img src="images/footer/html-logo.svg" width="115"
+              height="33" alt="htmlacademy"></a>
         </section>
-        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="html-logo" href="https://htmlacademy.ru/"><img src="images/footer/html-logo.svg" width="114.9"
-            height="32.9" alt="htmlacademy"></a>
       </footer>
     </div>
   </body>
