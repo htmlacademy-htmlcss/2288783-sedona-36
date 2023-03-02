@@ -339,6 +339,7 @@ body {
   padding-bottom: 70px;
   padding-right: 70px;
   color: #FFFFFF;
+  list-style-type: none;
 }
 
 .catalog-navigation-header {
@@ -348,6 +349,7 @@ body {
   margin-bottom: 40px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs {
@@ -355,6 +357,7 @@ body {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 
 }
 
@@ -363,22 +366,28 @@ body {
   margin-top: 40px;
   justify-content: space-between;
   width: 1060px;
+
 }
 
 .left-filter {
   display: flex;
   justify-content: space-between;
   width: 371px;
+
 }
 
 .ifrastrusture {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 150px;
+  list-style-type: none;
 }
 
 .housetype {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 141px;
+  list-style-type: none;
 }
 
 .price {
@@ -403,30 +412,62 @@ body {
 
 .sorting {
   display: flex;
-  justify-content: space-evenly;
-  width: 1060px;
-
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left:70px;
+  padding-right: 70px;
 }
-
+.vatiation-sorting{
+  width:292px;
+  height:49px;
+}
+.view{
+  display: flex;
+  list-style-type: none;
+}
 .hotel-list {
   display: flex;
   flex-wrap: wrap;
+  padding-left:70px;
+  padding-right:70px;
 }
 
 .hotel-list-item {
   width: 340px;
-
 }
 
+
+
+/* PAGINATION */
+.pagination{
+  padding-left:70px;
+  padding-right:70px;
+}
 .pagination-list {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-
 .pagination-link-buttom {
-
-  width: 60;
-  height: 60;
-  margin-left: 8px;
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 12px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color:rgba(130, 179, 211, 1);
+  text-decoration: none;
+}
+.pagination-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+.pagination-list li:nth-child(5){
+  background-color:rgba(255, 255, 255, 1);
+  color: #000000;
 }
 
 .mail-catalog {
