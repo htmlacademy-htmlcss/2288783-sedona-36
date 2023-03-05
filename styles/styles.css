@@ -546,7 +546,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  padding:8px 20px;
+  padding:8px 26px;
 }
 
 .hotel-button-second {
@@ -567,7 +567,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   white-space:nowrap;
-  padding:8px 14px;
+  padding:8px 20px;
 }
 .hotel-stars {
   box-sizing: border-box;
