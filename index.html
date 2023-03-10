@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>Седона</title>
   </head>
+
   <body>
     <div class="page-container">
       <header class="page-header">
-        <div class="container-logo"><a class="navigation-logo" href="index.html"><img src="images/header-img/header-logo.svg" width="140"
-            height="70" alt="Логотип"></a></div>
+        <div class="container-logo"><a class="navigation-logo" href="index.html"><img
+              src="images/header-img/header-logo.svg" width="140" height="70" alt="Логотип"></a></div>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -53,8 +54,8 @@
             alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
         <div class="information-block">
-            <h2 class="information-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-            <p class="information-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <h2 class="information-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+          <p class="information-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <section class="advantages">
           <ul class="advantages-list">
@@ -97,8 +98,8 @@
           </ul>
         </section>
         <div class="information-block">
-            <h2 class="information-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
-            <p class="information-text">Опытный персонал и качественное обслуживание!</p>
+          <h2 class="information-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+          <p class="information-text">Опытный персонал и качественное обслуживание!</p>
         </div>
         <section class="services">
           <ul class="services-list">
@@ -142,8 +143,8 @@
           <p class="mail-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="form-label" for="mail-post"></label>
-              <input type="text" id="mail-post" name="mail-post" placeholder="Ваш e-mail">
-              <button class="button-big" type="submit">Подписаться</button>
+            <input type="text" id="mail-post" name="mail-post" placeholder="Ваш e-mail">
+            <button class="button-big" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -175,6 +176,51 @@
         </section>
       </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <div class="modal-heder">
+          <h2 class="modal-title">Поиск гостинницы в Седоне</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <section class="modal-content">
+          <ul class="modal-list">
+            <li class="modal-item">
+              <label class="date-start" for="start">Дата заезда:</label>
+              <input  class="modal-input-date" type="date" id="start" name="trip-start" min="2018-01-01" max="2018-12-31" value="2020-04-27">
+              <span class="date-error1">Мы не можем отправить вас в прошлое</span>
+            </li>
+            <li class="modal-item">
+              <label class="date-end" for="end">Дата выезда:</label>
+              <input class="modal-input-date" type="date" id="start" name="trip-end" min="2018-01-01" max="2018-12-31" value="2021-09-01">
+              <span class="date-error2">На эти даты есть свободные номера. Пока есть.</span>
+            </li>
+            <li class="modal-item">
+               <form class="window">
+                 <label class="parent-label" for="parent">Взрослые:</label>
+                 <input class="minus" type="button">
+                 <input class="modal-input-number" type="number" id="parent" name="parent-number" min="1" max="100" value="2">
+                 <input class="plus" type="button">
+
+                 <label class="children-label" for="children">Дети:</label>
+                 <div class="tooltip">
+                  <span class="i">i</span>
+                  <div class="triangle">
+                    <span class="info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </div>
+                 </div>
+                 <input class="minus" type="button">
+                 <input class="modal-input-number" type="number" id="children" name="children-number" min="0" max="100" value="2">
+                 <input class="plus" type="button">
+               </form>
+            </li>
+            <li class="modal-item">
+              <button class="modal-button">Найти</button>
+            </li>
+          </ul>
+        </section>
+      </div>
   </body>
 
 </html>
