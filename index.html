@@ -4,17 +4,18 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/icons/favicon.svg" type="image/x-icon">
     <title>Седона</title>
   </head>
+
   <body>
     <div class="page-container">
       <header class="page-header">
-        <div class="container-logo"><a class="navigation-logo" href="index.html"><img src="images/header-img/header-logo.svg" width="140"
-            height="70" alt="Логотип"></a></div>
+        <a class="heder-link" href="index.html"><img class="navigation-logo" src="images/header-img/header-logo.svg" width="140" height="70" alt="Логотип"></a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="main.html">Главная</a>
+              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="faq.html">О Седоне</a>
@@ -25,20 +26,21 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user" href="#">
                 <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
-              <img src="images/icons/search.svg" width="20px" height="20px" alt="Поиск">
+              <img class="navigation-icon" src="images/icons/search.svg" width="20px" height="20px" alt="Поиск">
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user" href="#">
                 <span class="visually-hidden">
                   Избранное
                 </span>
-                <img src="images/icons/heart.svg" width="18px" height="17px" alt="Избранное">
+                <img class="navigation-icon" src="images/icons/heart.svg" width="18px" height="17px" alt="Избранное">
               </a>
+              <span class="number">12</span>
             </li>
             <li class="navigation-item">
               <a class="button-small button-header" href="#">Хочу сюда!</a>
@@ -53,8 +55,8 @@
             alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
         <div class="information-block">
-            <h2 class="information-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-            <p class="information-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <h2 class="information-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+          <p class="information-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <section class="advantages">
           <ul class="advantages-list">
@@ -97,8 +99,8 @@
           </ul>
         </section>
         <div class="information-block">
-            <h2 class="information-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
-            <p class="information-text">Опытный персонал и качественное обслуживание!</p>
+          <h2 class="information-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+          <p class="information-text">Опытный персонал и качественное обслуживание!</p>
         </div>
         <section class="services">
           <ul class="services-list">
@@ -139,11 +141,11 @@
         </section>
         <section class="mail">
           <h2 class="mail-title">Подпишитесь на рассылку</h2>
-          <p class="mail-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="mail-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="form-label" for="mail-post"></label>
-              <input type="text" id="mail-post" name="mail-post" placeholder="Ваш e-mail">
-              <button class="button-big" type="submit">Подписаться</button>
+            <input class="mail-input" type="text" id="mail-post" name="mail-post" placeholder="Ваш e-mail">
+            <button class="button-big button-mail" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -170,11 +172,56 @@
             </li>
           </ul>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a class="html-logo" href="https://htmlacademy.ru/"><img src="images/footer/html-logo.svg" width="114.9"
-              height="32.9" alt="htmlacademy"></a>
+          <a class="html-logo" href="https://htmlacademy.ru/"><img src="images/footer/html-logo.svg" width="115"
+              height="33" alt="htmlacademy"></a>
         </section>
       </footer>
     </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <div class="modal-heder">
+          <h2 class="modal-title">Поиск гостинницы в Седоне</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <section class="modal-content">
+          <ul class="modal-list">
+            <li class="modal-item">
+              <label class="date-start" for="start">Дата заезда:</label>
+              <input  class="modal-input-date" type="date" id="start" name="trip-start" min="2018-01-01" max="2018-12-31" value="2020-04-27">
+              <span class="date-error1">Мы не можем отправить вас в прошлое</span>
+            </li>
+            <li class="modal-item">
+              <label class="date-end" for="end">Дата выезда:</label>
+              <input class="modal-input-date" type="date" id="start" name="trip-end" min="2018-01-01" max="2018-12-31" value="2021-09-01">
+              <span class="date-error2">На эти даты есть свободные номера. Пока есть.</span>
+            </li>
+            <li class="modal-item">
+               <form class="window">
+                 <label class="parent-label" for="parent">Взрослые:</label>
+                 <input class="minus" type="button">
+                 <input class="modal-input-number" type="number" id="parent" name="parent-number" min="1" max="100" value="2">
+                 <input class="plus" type="button">
+
+                 <label class="children-label" for="children">Дети:</label>
+                 <div class="tooltip">
+                  <span class="i">i</span>
+                  <div class="triangle">
+                    <span class="info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </div>
+                 </div>
+                 <input class="minus" type="button">
+                 <input class="modal-input-number" type="number" id="children" name="children-number" min="0" max="100" value="2">
+                 <input class="plus" type="button">
+               </form>
+            </li>
+            <li class="modal-item">
+              <button class="modal-button">Найти</button>
+            </li>
+          </ul>
+        </section>
+      </div>
   </body>
 
 </html>
